@@ -8,9 +8,66 @@ body{
     margin: 0 auto;
     padding: 0 4%;
 }
-.pc-header{
+.header{
+    transition: all 300ms;
     height: 80px;
     background: #FFF;
+}
+.mobile-overlay{
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.50);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row-reverse;
+    display: none;
+    overflow: hidden;
+}
+.mobile-header-gp{
+    height: 100%;
+    display: none;
+}
+.mobile-menu{
+    display: flex;
+    flex-direction: column; /* 垂直布局 */
+    height: 100%;
+    width: 60vw;
+    background: #FFF;
+}
+.mobile-menu-header{
+    padding: 0px 16px;
+    border-bottom: 1px solid #C2C2C2;
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+.mobile-header-gp-links{
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* 垂直方向滚动 */
+}
+.mobile-header-gp-links-gradeGp{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.mobile-header-gp-links a,.mobile-header-gp-list{
+    padding: 16px 16px;
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+}
+.mobile-header-gp-links-gradeGp-items{
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    display: none;
+}
+.mobile-header-gp-links-gradeGp-items a{
+    background: #EFEFEF;
 }
 .pc-header-gp{
     height: 100%;
@@ -19,10 +76,9 @@ body{
     align-items: center;
 }
 .pc-header-gp-links{
-    display: flex;
     gap: 36px;
 }
-.pc-header-gp-links a{
+.pc-header-gp-links a,div{
     font-family: Noto Sans;
     text-decoration: none;
     color: #000;
@@ -37,12 +93,42 @@ body{
 }
 .pc-header-gp-links-gradeGp-items{
     position: absolute;
-    top: 64px;
+    top: 36px;
     right: 0;
-    height: 100px;
-    width: 100px;
+    width: 200px;
     background-color: #FFF;
     border-radius: 8px;
     box-shadow: 0px 4px 20.8px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
     display: none;
+}
+.pc-header-gp-links-gradeGp-items a{
+    padding: 12px 16px;
+}
+.pc-header-gp-links-arrow{
+    transition: transform 0.3s;
+}
+.mobile-header-gp-links-arrow{
+    transition: transform 0.3s;
+}
+.rotate {
+    transform: rotate(180deg);
+}
+@media screen and (max-width: 1023px) {
+    .header{
+        height: 60px;
+    }
+    .pc-header-gp{
+        display: none;;
+    }
+    .mobile-header-gp{
+        display: flex;
+        padding: 0px 16px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+ 
+    /* 在這裡寫上當視窗寬度小於 1024px 時應用的 CSS 樣式 */
 }
