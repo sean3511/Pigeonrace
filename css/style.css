@@ -66,6 +66,8 @@ body{
     flex-direction: column;
     gap:0;
     display: none;
+    background: #EFEFEF;
+    padding: 10px 0;
 }
 .mobile-header-gp-links-gradeGp-items a{
     background: #EFEFEF;
