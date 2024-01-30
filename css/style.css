@@ -199,6 +199,19 @@ body{
 .itembox-padding{
     padding: 12px 0px;
 }
+/* area頁面系列 */
+.area_title{
+    border-left: 4px solid #3256B2;
+    padding-left: 16px;
+
+    color: #3256B2;
+
+    font-family: "Noto Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
 @media screen and (max-width: 1023px) {
     .pc-areagroup{
         grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
