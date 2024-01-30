@@ -92,7 +92,6 @@ body{
     font-style: normal;
     font-weight: 600;
     display: flex;
-    gap: 8px;
 }
 .pc-header-gp-links-gradeGp{
     position: relative;
