@@ -1,7 +1,12 @@
 @import url('https://fonts.cdnfonts.com/css/noto-sans');
 body{
     font-family: 'Noto Sans', sans-serif;
-    background-color: #F8F7F6;
+    background-color: #F8F7F6 !important;
+    background: #F8F7F6 !important;
+}
+.bg-color{
+    background-color: #F8F7F6 !important;
+    background: #F8F7F6 !important;
 }
 .wrapper{
     max-width: 1400px;
@@ -212,7 +217,101 @@ body{
     font-weight: 900;
     line-height: normal;
 }
+.area_title_gp{
+    padding: 24px 4%;
+}
+.grade_gp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+.grade_group_item{
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #E1E1E1;
+    background: #E1E1E1;
+    overflow: hidden;
+}
+.Rwd_row{
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+
+}
+.Rwd_row > *{
+ background-color: white;
+}
+.colcum{
+    display: flex;
+    flex: 1 1 0;
+    flex-direction: column;
+    background: #E1E1E1;
+    gap: 1px;
+}
+.colcum > *{
+    background-color: white;
+}
+.single_item{
+    display: flex;
+    padding: 16px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 0;
+}
+.mult_item{
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    flex: 1 0 0;
+}
+.item_link_font{
+    color: #3256B2;
+    font-weight: 800;
+    font-family: "Noto Sans";
+    font-size: 20px;
+}
+.item_normal_font{
+    color: #686868;
+    font-family: "Noto Sans";
+    font-size: 20px;
+    font-weight: 800;
+}
+.flexbox_grow_X{
+    flex-grow: 0;
+}
+
+.grade_group_title{
+    display: block;
+    width: 100%;
+    color: #FFF;
+    font-family: "Noto Sans";
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 800;
+    padding: 16px;
+    background: #3256B2;
+}
+.grade_group_item > :first-child{
+    border-top-left-radius: 8px; /* 第一個元素的左上角 */
+    border-top-right-radius: 8px; /* 第一個元素的右上角 */
+  }
+  
+.grade_group_item > :last-child{
+    border-bottom-left-radius: 8px; /* 最後一個元素的左下角 */
+    border-bottom-right-radius: 8px; /* 最後一個元素的右下角 */
+  }
 @media screen and (max-width: 1023px) {
+    .Rwd_row{
+        display: flex;
+        flex-direction: column;
+    }
     .pc-areagroup{
         grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
     }
