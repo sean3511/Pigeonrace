@@ -14,6 +14,7 @@ var linksData = [
     { text: '3140鴿會', fileName: '3140鴿會.html' },
     { text: '新竹竹虹競翔會', fileName: '新竹竹虹競翔會.html' },
     { text: '3115鴿會', fileName: '3115鴿會.html' },
+    { text: '振峰西區', fileName: '振峰西區.html' },
     // 在这里添加更多链接数据
 ];
 
