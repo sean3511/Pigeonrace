@@ -4,6 +4,25 @@ body{
     background-color: #F8F7F6 !important;
     background: #F8F7F6 !important;
 }
+h2{
+    color: #000 !important;
+    font-family: "Noto Sans";
+    font-size: 36px !important; 
+    font-weight: 800 !important;
+}
+h3{
+    font-family: "Noto Sans";
+    font-size: 28px !important;
+    font-weight: 800 !important;
+}
+p{
+    color: #686868 !important;
+    font-family: "Noto Sans";
+    font-size: 18px !important;
+    font-style: normal;
+    font-weight: 600 !important;
+    line-height: 200% !important; /* 36px */
+}
 .bg-color{
     background-color: #F8F7F6 !important;
     background: #F8F7F6 !important;
@@ -229,6 +248,7 @@ body{
 }
 .grade_gp_img{
     width: 100%;
+    
 }
 .grade_group_item{
     width: 100%;
@@ -237,6 +257,19 @@ body{
     border: 1px solid #E1E1E1;
     background: #E1E1E1;
     overflow: hidden;
+}
+.Rwd_block{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.Rwd_block > *{
+    flex: 1 1 0;
+}
+.aboutus_text_area{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 .Rwd_row{
     display: flex;
@@ -290,7 +323,31 @@ body{
 .flexbox_grow_X{
     flex-grow: 0;
 }
-
+.page_content{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.aboutus_card{
+    display: flex;
+    padding: 40px 24px;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    border-radius: 8px;
+    background: #E4E4E4;
+}
+.colcum_img{
+    border-radius: 8px;
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.text_center{
+    text-align: center;
+}
 .grade_group_title{
     display: block;
     width: 100%;
@@ -312,7 +369,97 @@ body{
     border-bottom-left-radius: 8px; /* 最後一個元素的左下角 */
     border-bottom-right-radius: 8px; /* 最後一個元素的右下角 */
   }
+
+  /* 社群媒體相關 */
+  
+/* icon social */
+
+.hide-text{
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display: block;
+}
+
+.ease-all{
+	-webkit-transition: all 400ms ease-in-out;
+	-moz-transition: all 400ms ease-in-out;
+	-o-transition: all 400ms ease-in-out;
+	-ms-transition: all 400ms ease-in-out;
+	transition: all 400ms ease-in-out;
+}
+
+/* Social Icons */
+.social-media-list {
+  display: block;
+  font-size: 24px;
+  text-align: left;
+  padding: 0;
+}
+
+.social-media-list li a {
+  color: #fff;
+  text-align: center;
+}
+.contact-icon{
+  display: block;
+  z-index: 30;
+  min-width: 30px;
+  min-height: 30px;
+}
+.social-media-list li {
+  position: relative; 
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  margin: 10px 3px;
+  line-height: 60px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: #3256B2;
+  cursor: pointer; 
+  transition: all .2s ease-in-out;
+}
+
+.social-media-list li:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  opacity: 0;
+  box-shadow: 0 0 0 1px #052065;
+  transition: all .2s ease-in-out;
+    pointer-events: none;
+  cursor: default;
+}
+
+.social-media-list li:hover {
+  background-color: #052065; 
+}
+
+.social-media-list li:hover:after {
+  opacity: 1;  
+  transform: scale(1.2);
+  transition-timing-function: cubic-bezier(0.37,0.74,0.15,1.65);
+}
+
+.social-media-list li:hover a {
+  color: #FFF;
+}
+
+  /* 社群媒體相關 */
 @media screen and (max-width: 1023px) {
+    .social-media-list {
+        text-align: center;
+      }
+    .Rwd_block{
+        display: flex;
+        flex-direction: column;
+    }
     .Rwd_row{
         display: flex;
         flex-direction: column;
