@@ -16,9 +16,13 @@ var linksData = [
     { text: '3115鴿會', fileName: '3115鴿會.html' },
     { text: '振峰西區', fileName: '振峰西區.html' },
     { text: '大苗栗鴿會', fileName: '大苗栗鴿會.html' },
+    { text: '開創者聯誼會', fileName: '開創者聯誼會.html' },
     { text: '大新興聯誼會', fileName: '大新興聯誼會.html' },
     { text: '台東大豐會', fileName: '台東大豐會.html' },
     { text: '屏海信鴿', fileName: '屏海信鴿.html' },
+    { text: '超級馬拉松鴿會', fileName: '超級馬拉松鴿會.html' },
+    { text: '大明馬拉松', fileName: '大明馬拉松.html' },
+    { text: '苗栗冠軍馬拉松', fileName: '苗栗冠軍馬拉松.html' },
     // 在这里添加更多链接数据
 ];
 

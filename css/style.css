@@ -227,6 +227,9 @@ body{
     gap: 24px;
     margin-bottom: 40px;
 }
+.grade_gp_img{
+    width: 100%;
+}
 .grade_group_item{
     width: 100%;
     display: block;
