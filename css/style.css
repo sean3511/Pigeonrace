@@ -132,23 +132,36 @@ p{
     border-radius: 8px;
     box-shadow: 0px 4px 20.8px 0px rgba(0, 0, 0, 0.25);
     flex-direction: column;
-    display: none;
-}
-.pc-header-gp-links-gradeGp-items {
-    display: grid;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.5s, visibility 0.5s;
     pointer-events: none; /* 防止交互 */
 }
-
-.pc-header-gp-links-gradeGp-items.visible {
+.pc-header-gp-links-gradeGp-items a{
+    padding: 12px 16px;
+}
+.pc-header-gp-links-gradeGp-items-vertical{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 36px;
+    right: 0;
+    max-width: 500px;
+    background-color: #FFF;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20.8px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s, visibility 0.5s;
+    pointer-events: none; /* 防止交互 */
+}
+.pc-header-gp-links-gradeGp-items-vertical a{
+    padding: 12px 16px;
+}
+.visible {
     opacity: 1;
     visibility: visible;
     pointer-events: auto; /* 允许交互 */
-}
-.pc-header-gp-links-gradeGp-items a{
-    padding: 12px 16px;
 }
 .pc-header-gp-links-arrow{
     transition: transform 0.3s;
@@ -185,6 +198,11 @@ p{
     gap: 24px;
     grid-template-columns: repeat(6, 1fr);
 }
+.itemgroup-flex{
+    display: flex;
+    width: 100%;
+    gap: 24px;
+}
 .itembox{
     flex-direction: column;
     align-items: center;
@@ -206,6 +224,14 @@ p{
     /* background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.60) 100%), lightgray 50% / cover no-repeat; */
     border-radius: 8px;
     background-size: cover;
+}
+.itemgroup-flex .item-area{
+    flex: 1 1 0;
+    max-width: 400px;
+    height: 200px;
+}
+.bg-spring{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(/image/piegon_img/05.jpg) !important;
 }
 .itam_area_padding{
     width: 100%;
@@ -453,6 +479,15 @@ p{
 
   /* 社群媒體相關 */
 @media screen and (max-width: 1023px) {
+    .itemgroup-flex{
+        flex-direction: column;
+    }
+    .itemgroup-flex .item-area{
+        flex: none;
+        min-width: 100%;
+        max-width: 400px;
+        height: 200px;
+    }s
     .social-media-list {
         text-align: center;
       }

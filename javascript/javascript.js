@@ -21,8 +21,11 @@
         $("#header-placeholder").load("header.html");
     });
     // 切換pc比賽紀錄
-    $(".pc-header-gp-links-gradeGp").click(function() {
-        $(".pc-header-gp-links-gradeGp-items").toggleClass("visible");
+    $(".show-grade").click(function() {
+        $(".list-grade").toggleClass("visible");
+    });
+    $(".show-piegon").click(function() {
+        $(".list-piegon").toggleClass("visible");
     });
     $(".mobile-header-gp-links-gradeGp").click(function() {
         $(".mobile-header-gp-links-gradeGp-items").slideToggle(); // 切换淡入淡出
