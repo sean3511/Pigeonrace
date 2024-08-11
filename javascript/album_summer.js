@@ -11,7 +11,7 @@ var Img_container = document.getElementsByClassName("popup-photo-container")[0];
 
 document.addEventListener('DOMContentLoaded', function () {
     // 使用 Fetch API 來加載 JSON 文件
-    fetch('image/piegon_album_spring/data.json')  // 請將路徑替換為實際 JSON 文件的路徑
+    fetch('image/piegon_album_summer/data.json')  // 請將路徑替換為實際 JSON 文件的路徑
         .then(response => response.json())
         .then(data => {
             // 遍歷 JSON 中的每個項目並創建 tile 元素
@@ -28,7 +28,7 @@ function createTileElement(parsedData) {
     tile.className = `tile graphic-design work-${parsedData.title}`;
 
     // 使用縮略圖作為背景圖像
-    tile.style.backgroundImage = `url('image/piegon_album_spring/${parsedData.title}/${parsedData.thumbnail}')`;
+    tile.style.backgroundImage = `url('image/piegon_album_summer/${parsedData.title}/${parsedData.thumbnail}')`;
     tile.style.backgroundSize = 'cover';
 
     // 創建並設置 h3 元素
@@ -62,7 +62,7 @@ function createTileElement(parsedData) {
         images.forEach(imageName => {
             const img = document.createElement('img');
             img.className = 'popup-img';
-            img.src = `image/piegon_album_spring/${parsedData.title}/${imageName}`;
+            img.src = `image/piegon_album_summer/${parsedData.title}/${imageName}`;
             Img_container.appendChild(img);
         });
     });

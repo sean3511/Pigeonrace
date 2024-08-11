@@ -362,10 +362,11 @@ h5 {
 	padding: 0 4%
 }
 .popup-photo-container:last-child {
-	margin-bottom: 4%
+	margin-bottom: 4%;
+	padding-bottom: 24px;
 }
 .popup-img {
-	margin-top: 40px;
+	margin-top: 24px;
 	display: block;
 	-webkit-filter: drop-shadow( 0 2px 5px rgba(0, 0, 0, .2));
 	filter: drop-shadow( 0 2px 5px rgba(0, 0, 0, .2));
@@ -380,23 +381,11 @@ h5 {
 	position: relative;
 	border-radius: .5em;
 	transition: all .15s;
-	background: url(https://natural-design.work/css/images.unsplash.com/photo-1470124182917-cc6e71b22ecc?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=);
 	background-size: cover;
 	background-position: center;
 	box-shadow: 0 3px 20px 2px rgba(0, 0, 0, .329)
 }
-.popup-photo:nth-of-type(3n) {
-	background-image: url(https://natural-design.work/css/images.unsplash.com/photo-1422255198496-21531f12a6e8?dpr=2&auto=format&fit=crop&w=1500&h=996&q=80&cs=tinysrgb&crop=)
-}
-.popup-photo:nth-of-type(4n) {
-	background-image: url(https://natural-design.work/css/images.unsplash.com/photo-1490914327627-9fe8d52f4d90?dpr=2&auto=format&fit=crop&w=1500&h=2250&q=80&cs=tinysrgb&crop=)
-}
-.popup-photo:nth-of-type(5n) {
-	background-image: url(https://natural-design.work/css/images.unsplash.com/photo-1476097297040-79e9e1603142?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)
-}
-.popup-photo:nth-of-type(6n) {
-	background-image: url(https://natural-design.work/css/images.unsplash.com/photo-1464652149449-f3b8538144aa?dpr=2&auto=format&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb&crop=)
-}
+
 .popup-header {
 	padding: 0 4%;
 	height: 100px;
@@ -518,12 +507,7 @@ h5 {
 	.scroller-bar::-webkit-scrollbar-thumb {
 		border: 0
 	}
-	.arrow-left{
-		display: block;
-	}
-	.close-svg {
-		display: none;
-	}
+	
 	label {
 		font-size: 12px
 	}
@@ -543,6 +527,12 @@ h5 {
 	}
 }
 @media (max-width:770px) {
+	.close-svg {
+		display: none;
+	}
+	.arrow-left{
+		display: block;
+	}
 	.title_blocker {
 		display: block;
 		min-width: 30px;
@@ -588,7 +578,7 @@ h5 {
 		left: 0;
 		right: 0;
 		bottom: 0;
-		padding-top: 80px;
+		padding-top: 60px;
 		transform: none;
 		position: fixed;
 		width: 100vw;
