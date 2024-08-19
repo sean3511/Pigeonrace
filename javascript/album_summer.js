@@ -33,7 +33,8 @@ function createTileElement(parsedData) {
 
     // 創建並設置 h3 元素
     const h3 = document.createElement('h3');
-    h3.textContent = parsedData.title;
+    // h3.textContent = parsedData.title;
+    h3.textContent = "";
     tile.appendChild(h3);
 
     // 綁定點擊事件
