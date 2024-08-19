@@ -304,7 +304,7 @@ input[type=radio][id=web-design]:checked~.work-grid .web-design {
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	margin-top: 3%;
 	margin-bottom: 3%;
-	grid-auto-rows: 40vmin;
+	grid-auto-rows: 280px;
 	grid-auto-flow: row dense
 }
 .work-grid h3 {
@@ -513,7 +513,7 @@ h5 {
 	}
 	.work-grid {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-auto-rows: 40vmin
+		grid-auto-rows: 320px;
 	}
 	.main-nav {
 		display: none
@@ -620,6 +620,6 @@ h5 {
 @media (max-width:684px) {
 	.work-grid {
 		grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-		grid-auto-rows: 55vmin
+		grid-auto-rows: 400px
 	}
 }
