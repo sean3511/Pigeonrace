@@ -1,32 +1,27 @@
 [
     {
-        "title": "product1",
-        "image": "01.jpg,02.jpg,03.jpg",
-        "thumbnail": "01.jpg"
-    },
-    {
         "title": "product2",
-        "image": "04.jpg,05.jpg,06.jpg",
-        "thumbnail": "04.jpg"
+        "image": "06.jpg,05.jpg,04.jpg",
+        "thumbnail": "06.jpg"
     },
     {
         "title": "product3",
-        "image": "04.jpg,05.jpg,06.jpg",
-        "thumbnail": "04.jpg"
+        "image": "06.jpg,05.jpg,04.jpg",
+        "thumbnail": "06.jpg"
     },
     {
         "title": "product4",
-        "image": "04.jpg,05.jpg,06.jpg",
-        "thumbnail": "04.jpg"
+        "image": "06.jpg,05.jpg,04.jpg",
+        "thumbnail": "06.jpg"
     },
     {
         "title": "product5",
-        "image": "04.jpg,05.jpg,06.jpg",
-        "thumbnail": "04.jpg"
+        "image": "06.jpg,05.jpg,04.jpg",
+        "thumbnail": "06.jpg"
     },
     {
         "title": "product6",
-        "image": "04.jpg,05.jpg,06.jpg",
-        "thumbnail": "04.jpg"
+        "image": "06.jpg,05.jpg,04.jpg",
+        "thumbnail": "06.jpg"
     }
 ]
