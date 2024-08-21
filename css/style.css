@@ -26,6 +26,7 @@ p{
 .bg-color{
     background-color: #F8F7F6 !important;
     background: #F8F7F6 !important;
+    padding-bottom: 40px;
 }
 .wrapper{
     max-width: 1400px;
