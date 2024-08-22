@@ -51,3 +51,22 @@
     $(".mobile-header-gp-list").click(function() {
         $(this).find("img").toggleClass("rotate");
     });
+
+// 此功能用於各季節鴿子的即將到來
+document.addEventListener("DOMContentLoaded", function() {
+    // 获取所有带有 `coming-soon` 类的元素
+    const comingSoonElements = document.querySelectorAll('.coming-soon');
+  
+    // 遍历每个元素，在其底部添加 <p> 标签
+    comingSoonElements.forEach(function(element) {
+      const p = document.createElement('p');
+      
+      // 使用 classList.add 添加多个类
+      p.classList.add('itam_area_padding', 'comming-soon-font');
+      p.textContent = '即將到來';
+  
+      // 将 <p> 标签添加到目标元素的末尾
+      element.appendChild(p);
+    });
+  });
+  
