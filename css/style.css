@@ -266,6 +266,9 @@ p{
 .bg-autumn{
     background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(/image/a-pigeon-race-in-autumn.jpg) !important;
 }
+.bg-winter{
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.6) 100%), url(/image/a-pigeon-races-in-winter.png) !important;
+}
 .itam_area_padding{
     width: 100%;
     display: flex;
